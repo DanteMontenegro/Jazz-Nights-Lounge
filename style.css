@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Precious";
+  src: url("Precious.ttf") format("truetype"),
+       url("Precious.ttf") format("truetype");
+}
+
+* {
+  margin: 20;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #ffe05d;
+  font-family: 'Precious';
+  font-weight: lighter;
+}
+
+.time-select,
+.sound-picker {
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.time-select button,
+.sound-picker button {
+  color: #ffe05d;
+  width: 25%;
+  height: 20%;
+  background: none;
+  font-size: 14px;
+  border-radius: 5.5px;
+  cursor: pointer;
+  border: 2px solid #790c5a;
+  transition: all 0.5s ease;
+}
+
+.sound-picker button {
+  border: none;
+  height: 60px;
+  width: 60px;
+  padding: 14px;
+  border-radius: 50%;
+  border: 2.5px solid #790c5a;
+  transition: all 0.5s ease;
+}
+
+.sound-picker button img {
+  height: 100%;
+}
+
+.time-select button:hover {
+  background: #790c5a;
+  color: #f8eaa9;
+}
+
+.sound-picker button:hover {
+  background: #790c5a;
+  color: #f8eaa9;
+}
+
+.player-container {
+  position: relative;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: -3;
+}
+
+.player-container svg {
+  position: absolute;
+  bottom: -10%;
+  height: 60%;
+  left: 48%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+.time-display {
+  color:  #790c5a;
+  position: absolute;
+  font-size: 25px;
+  bottom: -15%;
+  font-weight: bold;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
