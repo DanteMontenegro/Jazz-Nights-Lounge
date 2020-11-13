@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Precious";
-  src: url("Precious.ttf") format("truetype"),
-       url("Precious.ttf") format("truetype");
+  src: url("assets/fonts/Precious.ttf") format("truetype"),
+       url("assets/fonts/Precious.ttf") format("truetype");
 }
 
 * {
@@ -10,19 +10,22 @@
   box-sizing: border-box;
 }
 
+/* Title */
+h1 {
+  text-align: center;
+  color: #ffe05d;
+  font-family: 'Precious';
+  font-weight: lighter;
+}
+
+/* Divs and Buttons */
+
 .app {
   height: 50vh;
   display: flex;
   justify-content: space-evenly;
   align-items: left;
   font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  text-align: center;
-  color: #ffe05d;
-  font-family: 'Precious';
-  font-weight: lighter;
 }
 
 .time-select,
@@ -34,6 +37,7 @@ h1 {
   flex-direction: column;
   flex: 1;
 }
+
 .time-select button,
 .sound-picker button {
   color: #ffe05d;
@@ -89,9 +93,11 @@ h1 {
   transform: translate(-50%, -50%) rotate(-90deg);
   pointer-events: none;
 }
+
 .player-container svg circle {
   transition: all 0.2s ease-in-out;
 }
+
 .time-display {
   color:  #790c5a;
   position: absolute;
@@ -99,6 +105,8 @@ h1 {
   bottom: -15%;
   font-weight: bold;
 }
+
+/* Video */
 
 video {
   position: fixed;
