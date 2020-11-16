@@ -123,7 +123,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   flex: -3;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .player-container svg {
@@ -145,7 +145,6 @@ h1 {
   bottom: -15%;
   background: none;
   color: #ffe262;
-  opacity: 0.98;
   box-shadow: 0 0 5em #470234;
 }
 
