@@ -13,15 +13,17 @@
 /* Title */
 h1 {
   text-align: center;
-  color: #ffe05d;
+  color: #f8d640;
   font-family: 'Precious';
   font-weight: lighter;
+  font-size: 50px;
+  opacity: 0.95;
 }
 
 /* Divs and Buttons */
 
 .app {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: space-evenly;
   align-items: left;
@@ -30,7 +32,7 @@ h1 {
 
 .time-select,
 .sound-picker {
-  height: 30%;
+  height: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -40,25 +42,28 @@ h1 {
 
 .time-select button,
 .sound-picker button {
-  color: #ffe05d;
-  width: 25%;
+  color: #ffe262;
+  width: 30%;
   height: 20%;
   background: none;
-  font-size: 14px;
+  font-size: 24px;
   border-radius: 5.5px;
   cursor: pointer;
-  border: 2px solid #790c5a;
-  transition: all 0.5s ease;
+  border: 3px solid #790c5a;
+  transition: all 0.9s ease;
+  font-family: 'Precious';
+  opacity: 0.98;
 }
 
 .sound-picker button {
   border: none;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   padding: 14px;
   border-radius: 50%;
-  border: 2.5px solid #790c5a;
-  transition: all 0.5s ease;
+  border: 3px solid #790c5a;
+  transition: all 0.9s ease;
+  opacity: 0.88;
 }
 
 .sound-picker button img {
@@ -66,23 +71,59 @@ h1 {
 }
 
 .time-select button:hover {
-  background: #790c5a;
-  color: #f8eaa9;
+  background: #7c2d66;
+  color: #f8d640;
+  opacity: 3;
+  box-shadow: 0 0 4em #790c5a;
 }
 
 .sound-picker button:hover {
-  background: #790c5a;
-  color: #f8eaa9;
+  background: #7c2d66;
+  color: #f8d640;
+  opacity: 3;
+  box-shadow: 0 0 4em #790c5a;
+}
+
+.button.play {
+  border-style: solid;
+  border-color: #7d0633;
+  border-color: red blue green yellow;
+  box-sizing: border-box;
+  border-width: 34px 0px 34px 74px;
+  border-color: transparent transparent transparent #753563;
+  opacity: 0.85;
+  background: transparent;
+}
+
+.button.play:hover {
+  opacity: 1;
+  transition: all 0.8s ease;
+  box-shadow: 0 0 4em #790c5a;
+  cursor: pointer;
+}
+
+.button.pause {
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 37px;
+  border-color: #790c5a;
+  border-style: double;
+  border-width: 0px 37px 0px 37px;
+  border-width: 0px 0px 0px 37px;
+  border-color: #790c5a;
+  display: none;
 }
 
 .player-container {
   position: relative;
-  height: 40%;
+  height: 47%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   flex: -3;
+  opacity: 0.8;
 }
 
 .player-container svg {
@@ -99,11 +140,13 @@ h1 {
 }
 
 .time-display {
-  color:  #790c5a;
   position: absolute;
   font-size: 25px;
   bottom: -15%;
-  font-weight: bold;
+  background: none;
+  color: #ffe262;
+  opacity: 0.98;
+  box-shadow: 0 0 5em #470234;
 }
 
 /* Video */
