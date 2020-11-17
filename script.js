@@ -34,7 +34,6 @@ replay.addEventListener("click", function() {
     
   });
 
-
 const restartSong = song =>{
     let currentTime = song.currentTime;
     song.currentTime = 0;
@@ -79,3 +78,11 @@ song.ontimeupdate = function() {
     video.pause();
   }
 };
+
+$(document).ready(function() {
+  var btn = $(".button");
+  btn.click(function() {
+    btn.toggleClass("paused");
+    return false;
+  });
+});

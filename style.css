@@ -13,10 +13,10 @@
 /* Title */
 h1 {
   text-align: center;
-  color: #f8d640;
+  color: #ffc93c;
   font-family: 'Precious';
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 65px;
   opacity: 0.95;
 }
 
@@ -42,27 +42,26 @@ h1 {
 
 .time-select button,
 .sound-picker button {
-  color: #ffe262;
-  width: 30%;
-  height: 20%;
+  color: #ffc93c;
+  width: 32%;
+  height: 25%;
   background: none;
-  font-size: 28px;
-  border-radius: 5.5px;
+  font-size: 45px;
+  border-radius: 7px;
   cursor: pointer;
-  border: 3px solid #790c5a;
-  transition: all 0.9s ease;
+  border: 3.8px solid #5c0543;
+  transition: all 0.7s ease;
   font-family: 'Precious';
-  opacity: 0.98;
 }
 
 .sound-picker button {
   border: none;
-  height: 75px;
-  width: 75px;
-  padding: 14px;
+  height: 95px;
+  width: 95px;
+  padding: 20px;
   border-radius: 50%;
-  border: 3px solid #790c5a;
-  transition: all 0.9s ease;
+  border: 3.8px solid #5c0543;
+  transition: all 0.7s ease;
   opacity: 0.88;
 }
 
@@ -71,17 +70,17 @@ h1 {
 }
 
 .time-select button:hover {
-  background: #7c2d66;
+  background: #8b1c6c;
   color: #f8d640;
-  opacity: 3;
-  box-shadow: 0 0 4em #790c5a;
+  opacity: 0.95;
+  box-shadow: 0 0 4em #5c0543;
 }
 
 .sound-picker button:hover {
-  background: #7c2d66;
+  background: #8b1c6c;
   color: #f8d640;
-  opacity: 3;
-  box-shadow: 0 0 4em #790c5a;
+  opacity: 0.95;
+  box-shadow: 0 0 4em #5c0543;
 }
 
 .button.play {
@@ -89,35 +88,34 @@ h1 {
   border-color: #7d0633;
   border-color: red blue green yellow;
   box-sizing: border-box;
-  border-width: 34px 0px 34px 74px;
-  border-color: transparent transparent transparent #753563;
-  opacity: 0.85;
+  border-width: 40px 0px 40px 90px;
+  border-color: transparent transparent transparent #5c0543;
   background: transparent;
+  opacity: 0.9;
 }
 
 .button.play:hover {
   opacity: 1;
   transition: all 0.8s ease;
-  box-shadow: 0 0 4em #790c5a;
   cursor: pointer;
 }
 
 .button.pause {
+  background: transparent;
   width: 74px;
   height: 74px;
   border-style: solid;
   border-width: 37px;
-  border-color: #790c5a;
   border-style: double;
   border-width: 0px 37px 0px 37px;
   border-width: 0px 0px 0px 37px;
-  border-color: #790c5a;
+  border-color: #6a2c70;
   display: none;
 }
 
 .player-container {
   position: relative;
-  height: 47%;
+  height: 55%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -141,11 +139,20 @@ h1 {
 
 .time-display {
   position: absolute;
-  font-size: 25px;
+  font-size: 35px;
   bottom: -15%;
   background: none;
-  color: #ffe262;
+  color: #ffc93c;
   box-shadow: 0 0 5em #470234;
+  text-shadow: 5px 5px #470234;
+}
+
+.replay {
+  width: 20%;
+}
+
+.replay:hover {
+  cursor: pointer;
 }
 
 /* Video */
