@@ -71,14 +71,12 @@ h1 {
 }
 
 .time-select button:hover {
-  background: #5c0543;
-  opacity: 0.85;
+  background: #5c0543af;
   box-shadow: 0 0 1em #f3eac2;
 }
 
 .sound-picker button:hover {
-  background: #5c0543;
-  opacity: 0.8;
+  background: #5c0543af;
   box-shadow: 0 0 2em #f3eac2;
 }
 
