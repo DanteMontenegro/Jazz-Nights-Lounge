@@ -91,12 +91,14 @@ h1 {
   border-color: transparent transparent transparent #5c0543;
   background: transparent;
   opacity: 0.75;
+  transition: all 0.9s ease;
 }
 
 .button.play:hover {
   opacity: 1;
   transition: all 0.8s ease;
   cursor: pointer;
+  border-color: transparent transparent transparent #f3eac2;
 }
 
 .button.pause {
