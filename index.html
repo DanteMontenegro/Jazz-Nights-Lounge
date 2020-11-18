@@ -18,27 +18,27 @@
         </div>
         <button class='button pause'></button>
         <div class="time-select">
-          <button data-time="10">Urban</button>
-          <button data-time="300" class="medium-mins">Rain</button>
-          <button data-time="600" class="long-mins">Night</button>
+          <button data-time="10" data-video="assets/video/bridge.mp4">Urban</button>
+          <button data-time="300" class="medium-mins" data-video="assets/video/rain.mp4">Rain</button>
+          <button data-time="600" class="long-mins" data-video="assets/video/night.mp4">Night</button>
         </div>
         <div class="player-container">
             <audio class="song">
                 <source src="assets/music/bridge.mp3" />
               </audio>
               <button class='button play'></button>
-              <svg class="track-outline" width="250" height="250" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="226.5" cy="226.5" r="216.5" stroke="#5c0543" opacity='0.7' stroke-width="10"/>
+              <svg class="track-outline" width="350" height="300" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="230" cy="230" r="240" stroke="#5c0543" opacity='0.7' stroke-width="18"/>
                 </svg>
-              <svg class="moving-outline" width="225" height="225" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="226.5" cy="226.5" r="216.5" stroke="#ffe05d" stroke-width="10"/>
+              <svg class="moving-outline" width="350" height="300" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="230" cy="230" r="240" stroke="#f3eac2" stroke-width="10"/>
                 </svg>
                 <h3 class="time-display">0:00</h3>     
       </div>
       <div class="sound-picker">
-        <button data-sound="assets/music/bridge.mp3" data-video="assets/video/bridge.mp4" ><img src="assets/svg/jazz.svg" alt=""></button>
-        <button data-sound="assets/music/none.mp3" data-video="assets/video/none.mp4"><img src="assets/svg/jazz.svg" alt=""></button>
-        <button data-sound="assets/music/none.mp3" data-video="assets/video/none.mp4"><img src="assets/svg/jazz.svg" alt=""></button>
+        <button data-sound="assets/music/bridge.mp3">1</button>
+        <button data-sound="assets/music/none.mp3" data-video="assets/video/night.mp4">2</button>
+        <button data-sound="assets/music/none.mp3" data-video="assets/video/rain.mp4">3</button>
         <img src="assets/svg/replay.svg" class="replay"></img> 
       </div>
     </div>
