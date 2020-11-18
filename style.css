@@ -90,12 +90,13 @@ h1 {
   background: transparent;
   opacity: 0.95;
   z-index: 1;
-  transition: all 0.7s ease;
+  transition: all 0.1s ease;
 }
 
 .button.play:hover {
   cursor: pointer;
   opacity: 1;
+  border-width: 42px 0px 42px 95px;
 }
 
 .button.pause {
