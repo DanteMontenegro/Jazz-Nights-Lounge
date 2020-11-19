@@ -50,14 +50,17 @@ timeSelect.forEach(option => {
 });
 
 const checkPlaying = song => {
+  var element = document.getElementById("button");
   if (song.paused) {
     song.play();
     video.play();
-    play.src = "assets/svg/pause.svg";
+    element.classList.remove("play");
+    element.classList.add("paused");
   } else {
     song.pause();
     video.pause();
-    play.src = "assets/svg/play.svg";
+    element.classList.remove("paused");
+    element.classList.add("play");
   }
 };
 
