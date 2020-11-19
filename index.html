@@ -16,7 +16,7 @@
           <source src="assets/video/bridge.mp4"  type="video/mp4">
         </video>
         </div>
-        <button class='button pause'></button>
+        <button class='button switch paused'></button>
         <div class="time-select">
           <button data-time="10" data-video="assets/video/bridge.mp4">Urban</button>
           <button data-time="300" class="medium-mins" data-video="assets/video/rain.mp4">Rain</button>
@@ -26,7 +26,7 @@
             <audio class="song">
                 <source src="assets/music/bridge.mp3" />
               </audio>
-              <button class='button play'></button>
+              <button class='button switch play'></button>
               <svg class="track-outline" width="350" height="300" viewBox="0 0 453 453" fill="#5c0543af" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="230" cy="230" r="220" stroke="#5c0543" opacity='0.7' stroke-width="5"/>
                 </svg>
@@ -34,7 +34,7 @@
                   <circle cx="230" cy="230" r="220" stroke="#f3eac2" opacity='0.90' stroke-width="10"/>
                   </svg>
               <svg class="moving-outline" width="350" height="300" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="230" cy="230" r="220" stroke="#cc0e74" stroke-width="12"/>
+                <circle cx="230" cy="230" r="220" stroke="#cc0e74" opacity='0.90' stroke-width="12"/>
                 </svg>
                 <h3 class="time-display">0:00</h3>     
       </div>
@@ -46,5 +46,6 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="button.js"></script>
   </body>
 </html>

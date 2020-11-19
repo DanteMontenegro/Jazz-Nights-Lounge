@@ -1,5 +1,4 @@
 // Variables 
-
 const song = document.querySelector(".song");
 const play = document.querySelector(".play");
 const replay = document.querySelector(".replay");
@@ -78,11 +77,3 @@ song.ontimeupdate = function() {
     video.pause();
   }
 };
-
-$(document).ready(function() {
-  var btn = $(".button");
-  btn.click(function() {
-    btn.toggleClass("paused");
-    return false;
-  });
-});
