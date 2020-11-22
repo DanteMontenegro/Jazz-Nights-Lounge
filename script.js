@@ -4,10 +4,10 @@ const play = document.querySelector(".play");
 const replay = document.querySelector(".replay");
 const outline = document.querySelector(".moving-outline circle");
 const video = document.querySelector(".vid-container video");
-const sounds = document.querySelectorAll(".sound-picker button");
+const sounds = document.querySelectorAll(".time-select button");
 const timeDisplay = document.querySelector(".time-display");
 const outlineLength = outline.getTotalLength();
-const timeSelect = document.querySelectorAll(".time-select button");
+const timeSelect = document.querySelectorAll(".sound-picker button");
 let fakeDuration = 600;
 
 outline.style.strokeDashoffset = outlineLength;
